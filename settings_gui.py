@@ -3,6 +3,8 @@ from tkinter import ttk, messagebox
 from config_manager import ConfigManager, DEFAULT_CONFIG, CONFIG_PATH
 from actions import ACTION_CHOICES
 
+__version__ = "1.0.0"
+
 class SettingsWindow:
     def __init__(self, root=None, config_manager=None, on_save_callback=None):
         self.own_root = False
@@ -15,7 +17,7 @@ class SettingsWindow:
         self.cfg = config_manager if config_manager else ConfigManager(CONFIG_PATH)
         self.on_save = on_save_callback
 
-        self.root.title("HandWave — Settings")
+        self.root.title(f"HandWave v{__version__} — Settings")
         self.root.geometry("680x780")
         self.root.minsize(620, 560)
         self.root.configure(bg="#1e1e24")
@@ -80,7 +82,7 @@ class SettingsWindow:
         # Header (Pinned Top)
         header_frame = ttk.Frame(container, padding=(20, 16, 20, 10))
         header_frame.pack(fill="x", side="top")
-        header_lbl = ttk.Label(header_frame, text="Gesture Control Settings", style="Header.TLabel")
+        header_lbl = ttk.Label(header_frame, text=f"HandWave v{__version__} — Settings", style="Header.TLabel")
         header_lbl.pack(anchor="w")
         sub_lbl = ttk.Label(header_frame, text="Enable/disable gestures, assign actions, and configure safety clutch.", style="Subheader.TLabel")
         sub_lbl.pack(anchor="w", pady=(2, 0))

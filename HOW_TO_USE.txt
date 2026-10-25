@@ -1,5 +1,5 @@
-HANDWAVE (CUSTOMIZABLE EDITION)
-Control your laptop with hand gestures, using the webcam.
+HANDWAVE v1.0.0 (CUSTOMIZABLE EDITION)
+Control your PC with hand gestures using your webcam.
 
 START
   Just double-click HandWave.exe!

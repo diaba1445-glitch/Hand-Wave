@@ -1,4 +1,9 @@
 @echo off
 title HandWave Settings
 cd /d "%~dp0"
-python settings_gui.py
+
+if exist "HandWave.exe" (
+    start "" "HandWave.exe" --settings
+) else (
+    python settings_gui.py
+)

@@ -1,0 +1,67 @@
+name: Build & Publish Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-windows:
+    name: Build & Package Windows Release
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pyinstaller
+
+      - name: Build Executable with PyInstaller
+        run: |
+          pyinstaller --noconfirm --onedir --windowed `
+            --name "HandWave" `
+            --add-data "hand_landmarker.task;." `
+            --add-data "config.json;." `
+            HandWave.py
+
+      - name: Assemble Release Package
+        shell: pwsh
+        run: |
+          $releaseDir = "dist/HandWave"
+          Copy-Item -Path "hand_landmarker.task" -Destination $releaseDir -Force
+          Copy-Item -Path "config.json" -Destination $releaseDir -Force
+          Copy-Item -Path "Start_HandWave.bat" -Destination $releaseDir -Force
+          Copy-Item -Path "Open_Settings.bat" -Destination $releaseDir -Force
+          Copy-Item -Path "HOW_TO_USE.txt" -Destination $releaseDir -Force
+          Copy-Item -Path "README.md" -Destination $releaseDir -Force
+          Copy-Item -Path "LICENSE" -Destination $releaseDir -Force
+          Copy-Item -Path "THIRD_PARTY_LICENSES.md" -Destination $releaseDir -Force
+
+          $tag = if ($env:GITHUB_REF_NAME) { $env:GITHUB_REF_NAME } else { "v1.0.0" }
+          $zipName = "HandWave-$tag-windows-x64.zip"
+          Compress-Archive -Path "$releaseDir/*" -DestinationPath $zipName -Force
+          Write-Host "Created archive: $zipName"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          name: "HandWave ${{ github.ref_name }}"
+          files: HandWave-*-windows-x64.zip
+          draft: false
+          prerelease: false
+          generate_release_notes: true

@@ -5,6 +5,8 @@ import subprocess
 import ctypes
 from pathlib import Path
 
+__version__ = "1.0.0"
+
 import cv2
 import numpy as np
 import mediapipe as mp
@@ -71,7 +73,9 @@ def open_settings_process():
 
     if settings_proc is not None and settings_proc.poll() is None:
         try:
-            hwnd = ctypes.windll.user32.FindWindowW(None, "HandWave — Settings")
+            hwnd = ctypes.windll.user32.FindWindowW(None, f"HandWave v{__version__} — Settings")
+            if not hwnd:
+                hwnd = ctypes.windll.user32.FindWindowW(None, "HandWave — Settings")
             if hwnd:
                 ctypes.windll.user32.ShowWindow(hwnd, 9)  # SW_RESTORE
                 ctypes.windll.user32.SetForegroundWindow(hwnd)
@@ -123,7 +127,7 @@ def main():
             print("Failed to open camera.")
             sys.exit(1)
 
-    window_name = "HandWave"
+    window_name = f"HandWave v{__version__}"
     cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
     cv2.resizeWindow(window_name, 960, 540)
 
@@ -142,7 +146,7 @@ def main():
     clutch_toggled_armed = False
     clutch_debounce_timer = 0.0
 
-    print("HandWave is running!")
+    print(f"HandWave v{__version__} is running!")
     print("Keys: [C] Clutch | [D] Double-Tap | [H] Split Hands | [P] Pause | [S] Settings | [1-8] Gestures | [Q/Esc] Quit")
 
     start_time = time.monotonic()

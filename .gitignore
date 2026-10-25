@@ -8,7 +8,9 @@ __pycache__/
 _internal/
 build/
 dist/
+dist_release/
 *.spec
+*.zip
 HandWave.exe
 HandControl.exe
 

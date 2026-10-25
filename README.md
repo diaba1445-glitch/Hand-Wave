@@ -1,6 +1,24 @@
 # HandWave 🖐️
 
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?style=for-the-badge)](https://github.com/diaba1445-glitch/Hand-Wave/releases/latest)
+[![Release](https://img.shields.io/github/v/release/diaba1445-glitch/Hand-Wave?style=for-the-badge&color=2ea44f)](https://github.com/diaba1445-glitch/Hand-Wave/releases/latest)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+[![Platform: Windows](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-blueviolet.svg?style=for-the-badge&logo=windows)](https://github.com/diaba1445-glitch/Hand-Wave/releases/latest)
+
 Control your PC with webcam-powered hand gestures in real-time. Built with Python, OpenCV, and Google MediaPipe.
+
+---
+
+## 📥 Download (Standalone Windows App — No Python Required)
+
+The fastest and easiest way to use HandWave is to download the standalone portable release:
+
+1. Go to the [**GitHub Releases page**](https://github.com/diaba1445-glitch/Hand-Wave/releases/latest) or download [**HandWave-v1.0.0-windows-x64.zip**](https://github.com/diaba1445-glitch/Hand-Wave/releases/download/v1.0.0/HandWave-v1.0.0-windows-x64.zip).
+2. Extract the downloaded `.zip` file anywhere on your computer.
+3. Double-click **`HandWave.exe`** (or **`Start_HandWave.bat`**) to launch!
+
+> [!TIP]
+> No Python installation, compiler, or command line tools are required for the standalone release. Everything is bundled and ready out of the box.
 
 ---
 
@@ -16,7 +34,9 @@ Control your PC with webcam-powered hand gestures in real-time. Built with Pytho
 
 ---
 
-## 🚀 Quick Start (Run from Source)
+## 🚀 Developers: Run from Source
+
+If you prefer to run from source code or modify HandWave:
 
 ### Prerequisites
 
@@ -24,14 +44,12 @@ Control your PC with webcam-powered hand gestures in real-time. Built with Pytho
 - **Webcam:** Any standard internal or USB webcam
 - **Python:** Python 3.10+ installed and added to your system `PATH`
 
-### 1. Download / Clone Repository
+### 1. Clone Repository
 
 ```bash
 git clone https://github.com/diaba1445-glitch/Hand-Wave.git
 cd Hand-Wave
 ```
-
-*(Alternatively, click **Code -> Download ZIP** on GitHub and extract the folder).*
 
 ### 2. Install Dependencies
 
@@ -86,6 +104,8 @@ Configuration is saved in `config.json` and hot-reloads dynamically.
 
 ```text
 HandWave/
+├── .github/workflows/
+│   └── release.yml          # Automated GitHub Actions Windows build & release
 ├── HandWave.py              # Main application entry point & camera HUD loop
 ├── settings_gui.py          # Tkinter settings GUI for gesture mapping
 ├── config_manager.py        # Configuration loading, validation, and auto-reload
@@ -96,9 +116,11 @@ HandWave/
 ├── hand_landmarker.task     # MediaPipe hand tracking model
 ├── requirements.txt         # Python package dependencies
 ├── Install_Dependencies.bat # 1-click batch installer for dependencies
-├── Start_HandWave.bat       # 1-click launcher for HandWave
+├── Start_HandWave.bat       # 1-click launcher for HandWave (auto-detects exe or python)
 ├── Open_Settings.bat        # 1-click launcher for Settings GUI
 ├── HOW_TO_USE.txt           # Detailed user guide and troubleshooting tips
+├── LICENSE                  # MIT License
+├── THIRD_PARTY_LICENSES.md  # Attributions for Google MediaPipe, OpenCV, NumPy
 └── README.md                # Project documentation
 ```
 
@@ -112,4 +134,6 @@ All camera frames and computer vision landmarks are processed entirely in memory
 
 ## 📄 License
 
-MIT License. Free for personal and commercial use.
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details. Free for personal and commercial use.
+
+Third-party open-source components and models are documented in [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md).
