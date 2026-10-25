@@ -1,0 +1,138 @@
+HANDWAVE (CUSTOMIZABLE EDITION)
+Control your laptop with hand gestures, using the webcam.
+
+START
+  Just double-click HandWave.exe!
+  A window opens showing your camera with the hand skeleton overlay.
+
+TWO-HAND SAFETY CLUTCH (PREVENTS ACCIDENTAL MISTAKES)
+  To prevent unintended gestures while talking, drinking coffee, or moving your hands,
+  the Safety Clutch lets you require a guard sign from one hand before gestures can fire!
+
+  How it works:
+    - Left Hand (Guard Hand): Holds Open Palm (✋), Peace Sign (✌️), or Fist (✊).
+    - Right Hand (Action Hand): Performs Pinches, Pointing, Volume Up/Down.
+    - When Guard Hand is NOT showing: Screen shows [LOCKED 🔒]. Zero gestures can fire.
+    - When Guard Hand is showing: Screen shows [ARMED 🟢]. Gestures work immediately!
+
+    Quick Toggle:
+    - Press 'C' anytime while the camera is on to toggle the Safety Clutch ON/OFF!
+    - Or configure Clutch Sign & Mode in the Settings Window.
+
+DOUBLE-GESTURE CONFIRMATION (DOUBLE-TAP TO FIRE)
+  Beside the Two-Hand Safety Clutch, you can enable Double-Gesture Confirmation
+  to completely eliminate false triggers using only ONE hand!
+
+  How it works:
+    - Tap 1: Perform any gesture (e.g., pinch, point, or wave). The screen prompts:
+      [DOUBLE-TAP: Repeat gesture within 0.7s to fire] with an amber countdown bar.
+    - Tap 2: Release and perform the same gesture again within the window.
+    - Result: The action fires!
+    - If you do not perform the second gesture within the window, it safely cancels.
+    - Ideal for drinking coffee, talking, or presenting with zero accidental clicks!
+
+  Quick Toggle:
+    - Press 'D' anytime while the camera window is open to toggle Double-Tap ON/OFF!
+    - Or toggle "Double-Gesture Confirmation" in the Settings Window ('S' key).
+
+SPLIT HANDS MODE (SEPARATE LEFT & RIGHT HAND CONTROLS)
+  You can configure independent actions for your Left and Right hands!
+  - When Split Hands is ON:
+      * Left Hand is color-coded in Cyan / Light Blue and acts as your Media & Multitasking pad.
+      * Right Hand is color-coded in Emerald Green and acts as your Navigation & Main control.
+  - When Split Hands is OFF (Unified Mode):
+      * Both hands share the same unified gesture actions (standard mode).
+
+  How to Toggle Split Hands ON / OFF:
+    - Press 'H' anytime while the camera window is open to instantly toggle Split Hands ON/OFF!
+    - Or toggle "Split Hands Mode" checkbutton in the Settings Window ('S' key).
+
+SETTINGS & CUSTOMIZATION
+  You can customize any gesture, turn off gestures you don't need, or change
+  the keyboard/mouse action assigned to each gesture!
+
+  How to open Settings:
+    - Press 'S' on your keyboard while the HandWave camera window is open.
+    - Or double-click Open_Settings.bat anytime.
+
+  In the Settings Window:
+    - Double-Gesture Confirmation: Toggle ON/OFF and adjust confirmation window slider (0.4s - 1.3s).
+    - Split Hands Mode: Toggle ON/OFF to configure Left and Right hands separately via tabs.
+    - Two-Hand Safety Clutch: Enable/disable and choose Guard Sign & Mode.
+    - Active Gestures & Mappings: Check/Uncheck any gesture and choose its action:
+        * Desktop & Multitasking: Switch Desktop Right/Left (Win+Ctrl+Arrows),
+          Task View (Win+Tab), Show Desktop / Minimize All (Win+D), Switch App (Alt+Tab)
+        * Window Management: Maximize (Win+Up), Minimize (Win+Down), Close Window (Alt+F4)
+        * Media & Volume: Volume Up/Down/Mute, Play/Pause, Next/Prev Track
+        * Navigation: Right/Left/Up/Down Arrow, Page Up/Down, Space, Enter, Escape
+        * Mouse: Left Click, Right Click, or None.
+    - Adjust the "Hold Duration" slider to change gesture sensitivity.
+    - Click "Save & Apply" to apply changes immediately without restarting.
+
+QUICK KEYBOARD SHORTCUTS IN CAMERA WINDOW
+  C ......... Toggle Safety Clutch ON / OFF
+  D ......... Toggle Double-Gesture Confirmation ON / OFF (Double-Tap to fire)
+  H ......... Toggle Split Hands Mode ON / OFF (Independent Left & Right Hands)
+  S ......... Open the Settings Window
+  P ......... Pause or resume gesture detection
+  1 ......... Quick toggle Thumbs Up on/off
+  2 ......... Quick toggle Thumbs Down on/off
+  3 ......... Quick toggle Point Right on/off
+  4 ......... Quick toggle Point Left on/off
+  5 ......... Quick toggle Pinch (Thumb + Index) on/off
+  6 ......... Quick toggle Pinch (Thumb + Middle) on/off
+  7 ......... Quick toggle Pinch (Thumb + Ring) on/off
+  8 ......... Quick toggle Pinch (Thumb + Pinky) on/off
+  Q or Esc .. Quit application
+
+GESTURES (DEFAULT MAPPINGS)
+  [When Split Hands is OFF - Unified Mode]:
+    Thumbs up ................... Volume Up    (repeats while held)
+    Thumbs down ................. Volume Down  (repeats while held)
+    Point right (index) ......... Right Arrow  (next slide / seek)
+    Point left (index) .......... Left Arrow   (prev slide / seek)
+    Pinch (Thumb + Index) ....... Page Down / Space
+    Pinch (Thumb + Middle) ...... Page Up / Enter
+    Pinch (Thumb + Ring) ........ Home
+    Pinch (Thumb + Pinky) ....... Volume Mute / End
+    Swipe Right (Wave Right) .... Right Arrow
+    Swipe Left (Wave Left) ...... Left Arrow
+    Swipe Up (Wave Up) .......... Page Up
+    Swipe Down (Wave Down) ...... Page Down
+
+  [When Split Hands is ON - Independent Profiles]:
+    🟢 Right Hand (Navigation & Main Actions):
+      - Thumbs Up / Down ........ Volume Up / Down
+      - Point Right / Left ...... Right Arrow / Left Arrow
+      - Pinch Thumb+Index ....... Page Down (Scroll Down)
+      - Pinch Thumb+Middle ...... Page Up (Scroll Up)
+      - Pinch Thumb+Ring ........ Home
+      - Pinch Thumb+Pinky ....... End
+      - Swipe Right / Left ...... Right Arrow / Left Arrow
+      - Swipe Up / Down ......... Page Up / Page Down
+
+    🔵 Left Hand (Media & Multitasking Actions):
+      - Thumbs Up / Down ........ Volume Up / Down
+      - Point Right / Left ...... Next Track / Previous Track
+      - Pinch Thumb+Index ....... Space bar (Play / Pause)
+      - Pinch Thumb+Middle ...... Volume Mute
+      - Pinch Thumb+Ring ........ Task View (Win+Tab)
+      - Pinch Thumb+Pinky ....... Show Desktop (Win+D)
+      - Swipe Right / Left ...... Switch Virtual Desktop Right / Left
+      - Swipe Up / Down ......... Task View / Show Desktop
+
+
+GOOD TO KNOW
+  - Visual Feedback: The camera HUD displays [RIGHT HAND] or [LEFT HAND] next to gestures,
+    and colors the skeleton green (Right) or cyan (Left).
+  - Arrow keys, Enter, and Space go to whichever window you clicked last. Click your
+    presentation, video or browser window once after starting HandWave.
+  - If it says the camera cannot be opened, close other apps using the webcam
+    (Zoom, Teams, Camera app) and check privacy settings.
+  - Good lighting helps tracking. Keep your hands inside the webcam frame.
+
+PRIVACY
+  All camera images and hand landmarks are processed 100% locally on your PC.
+  Nothing is recorded, saved or transmitted, and no internet connection is used.
+
+Requirements: Windows 10 or 11 (64-bit) and a webcam.

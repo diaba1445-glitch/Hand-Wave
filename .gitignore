@@ -1,0 +1,32 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# PyInstaller build artifacts & extracted onedir runtime (>100MB files like cv2.pyd)
+_internal/
+build/
+dist/
+*.spec
+HandWave.exe
+HandControl.exe
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# IDE configurations
+.idea/
+.vscode/
+*.swp
+*.swo

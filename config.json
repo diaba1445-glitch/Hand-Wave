@@ -1,0 +1,243 @@
+{
+  "split_hands": false,
+  "double_gesture": {
+    "enabled": false,
+    "window_seconds": 0.75
+  },
+  "gestures": {
+    "THUMB_UP": {
+      "enabled": true,
+      "action": "TASK_VIEW",
+      "label": "Thumbs Up",
+      "repeat": true
+    },
+    "THUMB_DOWN": {
+      "enabled": true,
+      "action": "VOLUME_DOWN",
+      "label": "Thumbs Down",
+      "repeat": true
+    },
+    "POINT_RIGHT": {
+      "enabled": false,
+      "action": "RIGHT",
+      "label": "Point Right (Index)",
+      "repeat": false
+    },
+    "POINT_LEFT": {
+      "enabled": false,
+      "action": "LEFT",
+      "label": "Point Left (Index)",
+      "repeat": false
+    },
+    "PINCH_INDEX": {
+      "enabled": true,
+      "action": "PAGE_DOWN",
+      "label": "Pinch (Thumb + Index)",
+      "repeat": false
+    },
+    "PINCH_MIDDLE": {
+      "enabled": true,
+      "action": "PAGE_UP",
+      "label": "Pinch (Thumb + Middle)",
+      "repeat": false
+    },
+    "PINCH_RING": {
+      "enabled": false,
+      "action": "HOME",
+      "label": "Pinch (Thumb + Ring)",
+      "repeat": false
+    },
+    "PINCH_PINKY": {
+      "enabled": true,
+      "action": "PAGE_UP",
+      "label": "Pinch (Thumb + Pinky)",
+      "repeat": false
+    },
+    "SWIPE_RIGHT": {
+      "enabled": false,
+      "action": "SPACE",
+      "label": "Swipe Right (Wave Right)",
+      "repeat": false
+    },
+    "SWIPE_LEFT": {
+      "enabled": false,
+      "action": "APP_SWITCH",
+      "label": "Swipe Left (Wave Left)",
+      "repeat": false
+    },
+    "SWIPE_UP": {
+      "enabled": false,
+      "action": "TASK_VIEW",
+      "label": "Swipe Up (Wave Up)",
+      "repeat": false
+    },
+    "SWIPE_DOWN": {
+      "enabled": false,
+      "action": "TASK_VIEW",
+      "label": "Swipe Down (Wave Down)",
+      "repeat": false
+    }
+  },
+  "right_hand": {
+    "gestures": {
+      "THUMB_UP": {
+        "enabled": true,
+        "action": "VOLUME_UP",
+        "label": "Thumbs Up",
+        "repeat": true
+      },
+      "THUMB_DOWN": {
+        "enabled": true,
+        "action": "VOLUME_DOWN",
+        "label": "Thumbs Down",
+        "repeat": true
+      },
+      "POINT_RIGHT": {
+        "enabled": true,
+        "action": "RIGHT",
+        "label": "Point Right (Index)",
+        "repeat": false
+      },
+      "POINT_LEFT": {
+        "enabled": true,
+        "action": "LEFT",
+        "label": "Point Left (Index)",
+        "repeat": false
+      },
+      "PINCH_INDEX": {
+        "enabled": true,
+        "action": "PAGE_DOWN",
+        "label": "Pinch (Thumb + Index)",
+        "repeat": false
+      },
+      "PINCH_MIDDLE": {
+        "enabled": true,
+        "action": "PAGE_UP",
+        "label": "Pinch (Thumb + Middle)",
+        "repeat": false
+      },
+      "PINCH_RING": {
+        "enabled": true,
+        "action": "HOME",
+        "label": "Pinch (Thumb + Ring)",
+        "repeat": false
+      },
+      "PINCH_PINKY": {
+        "enabled": true,
+        "action": "END",
+        "label": "Pinch (Thumb + Pinky)",
+        "repeat": false
+      },
+      "SWIPE_RIGHT": {
+        "enabled": true,
+        "action": "RIGHT",
+        "label": "Swipe Right (Wave Right)",
+        "repeat": false
+      },
+      "SWIPE_LEFT": {
+        "enabled": true,
+        "action": "LEFT",
+        "label": "Swipe Left (Wave Left)",
+        "repeat": false
+      },
+      "SWIPE_UP": {
+        "enabled": true,
+        "action": "PAGE_UP",
+        "label": "Swipe Up (Wave Up)",
+        "repeat": false
+      },
+      "SWIPE_DOWN": {
+        "enabled": true,
+        "action": "PAGE_DOWN",
+        "label": "Swipe Down (Wave Down)",
+        "repeat": false
+      }
+    }
+  },
+  "left_hand": {
+    "gestures": {
+      "THUMB_UP": {
+        "enabled": true,
+        "action": "VOLUME_UP",
+        "label": "Thumbs Up",
+        "repeat": true
+      },
+      "THUMB_DOWN": {
+        "enabled": true,
+        "action": "VOLUME_DOWN",
+        "label": "Thumbs Down",
+        "repeat": true
+      },
+      "POINT_RIGHT": {
+        "enabled": true,
+        "action": "NEXT_TRACK",
+        "label": "Point Right (Index)",
+        "repeat": false
+      },
+      "POINT_LEFT": {
+        "enabled": true,
+        "action": "PREV_TRACK",
+        "label": "Point Left (Index)",
+        "repeat": false
+      },
+      "PINCH_INDEX": {
+        "enabled": true,
+        "action": "SPACE",
+        "label": "Pinch (Thumb + Index)",
+        "repeat": false
+      },
+      "PINCH_MIDDLE": {
+        "enabled": true,
+        "action": "MUTE",
+        "label": "Pinch (Thumb + Middle)",
+        "repeat": false
+      },
+      "PINCH_RING": {
+        "enabled": true,
+        "action": "TASK_VIEW",
+        "label": "Pinch (Thumb + Ring)",
+        "repeat": false
+      },
+      "PINCH_PINKY": {
+        "enabled": true,
+        "action": "SHOW_DESKTOP",
+        "label": "Pinch (Thumb + Pinky)",
+        "repeat": false
+      },
+      "SWIPE_RIGHT": {
+        "enabled": true,
+        "action": "SWITCH_DESKTOP_RIGHT",
+        "label": "Swipe Right (Wave Right)",
+        "repeat": false
+      },
+      "SWIPE_LEFT": {
+        "enabled": true,
+        "action": "SWITCH_DESKTOP_LEFT",
+        "label": "Swipe Left (Wave Left)",
+        "repeat": false
+      },
+      "SWIPE_UP": {
+        "enabled": true,
+        "action": "TASK_VIEW",
+        "label": "Swipe Up (Wave Up)",
+        "repeat": false
+      },
+      "SWIPE_DOWN": {
+        "enabled": true,
+        "action": "SHOW_DESKTOP",
+        "label": "Swipe Down (Wave Down)",
+        "repeat": false
+      }
+    }
+  },
+  "hold_time_seconds": 0.35,
+  "camera_index": 0,
+  "topmost": true,
+  "draw_skeleton": true,
+  "mirrored": true,
+  "safety_clutch": {
+    "enabled": false,
+    "sign": "PEACE_SIGN",
+    "mode": "HOLD"
+  }
+}
